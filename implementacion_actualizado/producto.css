@@ -1,0 +1,1397 @@
+
+
+
+html,body{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body{
+    margin: 0;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 12vw 1fr 12vw;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+
+/*PRIMERA COLUMNA*/
+
+.primeraColumna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), #1C1C1C;
+    height: 100%;
+    width: 12vw;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.logo{
+    margin-top: 1rem;
+}
+
+.tienda_bibl_cat_pla > h1{
+    margin: 3vh 0;
+}
+
+.tienda_bibl_cat_pla > h1:hover{
+    color: red;
+}
+
+h1{
+    text-align: center;
+    font-size: medium;
+}
+.configuracion{
+    margin-top: 60vh;
+    margin-bottom: 2vh;
+}
+
+
+
+
+
+
+
+
+
+/*SEGUNDA COLUMNA*/
+
+
+.segundaColumna{
+    position: absolute;
+    top: 0px;
+    left: 12vw;
+    right: 12vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 1.45%, rgba(0, 0, 0, 0.20) 3.91%, rgba(33, 33, 33, 0.20) 6.06%), linear-gradient(90deg, #1D1D1D 0%, #3E3E3E 8.12%, #434343 91.08%, #1D1D1D 99.43%);
+    bottom: 0px;
+}
+
+.barraBotones{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    left: 12vw;
+    right: 12vw;
+    height: 100px;
+    background: linear-gradient(180deg, #1C1C1C 28.6%, #1C1C1C 92.7%);
+    z-index: 5;
+}
+
+.barraBotones >div{
+    margin: auto;
+}
+
+.barraBotones > p{
+    margin: auto;
+}
+.barraBotones > p:hover{
+    color: red;
+}
+
+.buscador {
+    border-radius: 10rem;
+    background-color: #7A7A7A;
+    width: 10rem;
+    height: 2rem;
+    text-align: left;
+    border: 3px solid black;
+    margin-top: 0.6vh;
+}
+
+.buscador > p{
+    margin: 0.5rem 0.5vw;
+}
+
+
+
+/*Productos de la tienda*/
+
+.contenedorProducto{
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 1.45%, rgba(0, 0, 0, 0.20) 3.91%, rgba(33, 33, 33, 0.20) 6.06%), linear-gradient(90deg, #1D1D1D 0%, #3E3E3E 8.12%, #434343 91.08%, #1D1D1D 99.43%);
+    margin-top: 100px;
+
+}
+.mainProducto{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+.aniadirCarrito{
+    margin-top: 10vh;
+}
+
+
+.precio{
+    text-align: right;
+
+}
+
+.precio > span{
+    font-size: 35px;
+}
+
+.producto{
+    margin: 1vh 1rem;
+}
+
+.producto > img{
+    border-radius: 12%;
+}
+
+.producto > p:hover{
+    color: red;
+}
+
+.botonAniadirCarrito{
+    background-color: #7A7A7A;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    height: 2.5em;
+    width: 18em;
+}
+
+.botonAniadirCarrito > img{
+    margin-top: 0.1em;
+}
+
+.botonAniadirCarrito > p{
+    margin: auto 0;
+}
+
+
+.descripcion{
+    width: 30vw;
+    margin: 0 14vw;
+    text-align: left;
+}
+.descripcion > h1{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.ArticulosRelacionados > h1{
+    font-size: 1.3rem;
+}
+
+.containerJuegosRelacionados{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.juegoRelacionado > img{
+    border-radius: 10px;
+}
+
+
+
+
+
+/* TERCERA COLUMNA */
+
+.terceraColumna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), #1C1C1C;
+    height: 100%;
+    width: 12vw;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.containerTresIconos{
+    display: flex;
+}
+
+.tresIconos{
+    background-color: #7A7A7A;
+    border: 3px solid black;
+    border-radius: 5rem;
+    margin: 1.9rem 0.4vw;
+}
+
+.tresIconos:hover{
+    background-color: red;
+}
+/***************************************************************/
+ /*Aqui falla ocupa más de lo que debe*/
+.containerPopular{
+    
+}
+
+.productosPopulares{
+    display: flex;;
+}
+
+.productosPopulares > img{
+    border-radius: 20%;
+    margin: auto 1vw;
+}
+
+
+.productosPopulares:hover{
+    color: red;
+}
+
+.pie{
+    margin-top: 24vh;
+}
+
+.pie > h1{
+    margin: 3vh 0vw;
+}
+
+.pie > h1:hover{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 1300px){
+
+    .contenedor{
+        grid-template-columns: 12vw 1fr 18vw;
+    }
+
+
+    /*PRIMERA COLUMNA*/
+    .primeraColumna{
+        height: 100%;
+    }
+    
+    .tienda_bibl_cat_pla > h1{
+        margin: 3vh 0;
+    }
+    
+    .tienda_bibl_cat_pla > h1:hover{
+        color: red;
+    }
+    
+    .configuracion{
+        margin-top: 55vh;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Segunda columna*/
+    
+
+    .segundaColumna{
+    
+    right: 18vw;
+    }
+    
+    .barraBotones{
+        right: 18vw;
+        height: 100px;
+        gap: 1em;
+    }
+
+    .descripcion{
+        margin: 0 5vw;
+    }
+    
+    
+    
+    /*Productos de la tienda*/
+    
+    
+    /*Tercera COLUMNA*/
+    .terceraColumna{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), linear-gradient(0deg, #1C1C1C 0%, #1C1C1C 100%), #1C1C1C;
+        height: 100%;
+        width: 18vw;
+    }
+
+    .containerTresIconos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tresIconos{
+        background-color: #7A7A7A;
+        border: 3px solid black;
+        border-radius: 5rem;
+        margin: 1.9rem 0.4vw;
+    }
+
+    .tresIconos:hover{
+        background-color: red;
+    }
+    /***************************************************************/
+    /*Aqui falla ocupa más de lo que debe*/
+    .containerPopular{
+        
+    }
+
+    .productosPopulares{
+        display: flex;
+        
+    }
+
+    .productosPopulares > img{
+        border-radius: 20%;
+        margin: auto 1vw;
+    }
+
+
+    .productosPopulares:hover{
+        color: red;
+    }
+
+    .pie > h1{
+        margin: 3vh 0vw;
+    }
+
+    .pie > h1:hover{
+        color:red;
+    }
+
+}
+
+
+
+
+
+@media (width < 1175px){
+
+    .mainProducto {
+        gap: 1em;
+    }
+
+    .descripcion {
+        margin: 0 9vw;
+        text-align: left;
+    }
+}
+
+@media (width < 950px){
+
+    .mainProducto {
+        flex-direction: column;
+    }
+
+    .descripcion {
+        margin: 0 9vw;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .aniadirCarrito {
+        margin-top: 1vh;
+    }
+}
+
+@media (width < 800px){
+    .barraBotones {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 14em;
+        gap: inherit;
+    }
+
+    .contenedorProducto {
+        margin-top: 14em;
+    }
+
+}
+
+@media (width < 730px){
+    .configuracion{
+        margin-bottom: 0;
+    }
+    
+    .productosPopulares{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productosPopulares > p{
+        text-align: center;
+    }
+
+    .containerTresIconos{
+        flex-direction: column;
+    }
+
+    .tresIconos{
+        margin-top: 2vh;
+        margin-bottom: 0vh;
+    }
+
+    .pie{
+        margin-top: 0;
+    }
+
+    .pie > h1{
+        margin: 1em 0vw;
+    }
+
+
+    .configuracion > h1{
+        font-size: 0.7rem;
+    }
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (width < 700px){
+
+    .productosPopulares > p{
+        font-size: 0.7rem;
+    }
+
+    .pie > h1{
+        font-size: 0.7rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Surface DUo*/
+@media (width < 541px){
+    .contenedorProductos {
+        margin-top: 10em;
+    }
+}
+
+@media (width < 530px){
+    .configuracion > h1{
+        font-size: 0.4rem;
+    }
+
+    .logo > img
+    {
+        width: 17vw;
+        height: 8vh;
+    }
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1 {
+        font-size: 0.5rem;
+    }
+
+    .productosPopulares > img{
+        width: 13vw;
+        height: 6vh;
+    }
+
+    .pie> h1{
+        padding-bottom: 1vh;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.7rem;
+        margin: 0.4em;
+    }
+
+    .pie> h1{
+        font-size: 0.6rem;
+        margin-bottom: 1em;
+    }
+    .buscador{
+        width: 20vw;
+        height: 2em;
+    }
+
+    .juego > img, .juego > a > img{
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .buscador > p{
+        margin: 0.4em 0.5vw;
+    }
+
+
+}
+
+@media (width < 550px){
+    .configuracion > h1{
+        font-size: 0.5rem;
+    }
+
+    .juegoRelacionado > img{
+        width: 10em;
+        height: 11em;
+    }
+    
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1 {
+        font-size: 0.5rem;
+    }
+}
+
+
+
+
+@media (width < 460px){
+    .productosPopulares > p{
+        font-size: 0.7rem;
+        margin: 0.4em;
+    }
+
+
+    body{
+        font-size: 0.6rem;
+    }
+
+    .botonAniadirCarrito{
+        margin: auto;
+    }
+
+    .botonAniadirCarrito > img{
+        width: 2em;
+        height: 2em;
+    }
+
+    .aniadirCarrito, .aniadirCarrito > p, .precio{
+        text-align: center;
+    }
+
+    .producto > img{
+        width: 22em;
+        height: 22em;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (width < 380px){
+    .configuracion > h1{
+        font-size: 0.4rem;
+    }
+
+    .productosPopulares > img{
+        width: 10vw;
+        height: 6vh;
+    }
+
+    .pie> h1{
+        padding-bottom: 1vh;
+    }
+
+    .producto > img {
+        width: 18em;
+        height: 19em;
+    }
+
+    .botonAniadirCarrito > img{
+        width: 2em;
+        height: 2em;
+    }
+
+    .aniadirCarrito, .aniadirCarrito > p, .precio{
+        text-align: center;
+    }
+
+    .juegoRelacionado > img{
+        width: 10em;
+        height: 11em;
+    }
+
+}
+
+
+/*Galaxy fold*/
+
+   
+@media (width < 290px){
+    .producto > img{
+        width: 15em;
+        height: 15em;
+        align-items: center;
+    }
+
+    .juegoRelacionado > img{
+        width: 9em;
+        height: 10em;
+    }
+
+    .containerJuegosRelacionados{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .buscador{
+        width: 20vw;
+        height: 2em;
+    }
+
+    .pie> h1{
+        padding-bottom: 1vh;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.5rem;
+        margin: 0.4em;
+    }
+
+    .pie> h1{
+        font-size: 0.45rem;
+        margin-bottom: 1em;
+    }
+
+    h1{
+        font-size: small;
+    }
+
+    .tresIconos{
+        width: 10vw;
+        height: 4vh;
+    }
+
+    .tresIconos > a> img{
+        width: 10vw;
+        height: 3.5vh;
+    }
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1 {
+        font-size: 0.4rem;
+    }
+
+    .configuracion > h1 {
+        /*font-size: 0.35rem;*/
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+/*DImensions: Surface Duo*//*
+@media (height < 860px){
+    .productosPopulares > p{
+        font-size: 0.7em;
+        margin: 0.4em;
+    }
+    .pie> h1{
+        font-size: 0.7em;
+        margin-bottom: 1em;
+    }
+    .barraBotones{
+        font-size: 0.7em;
+    }
+    .buscador{
+        width: 6em;
+        height: 2em;
+
+    }
+    .buscador > p{
+        margin-top: 0.4em;
+    }
+
+    .contenedorProducto{
+        margin-top: 9em;
+    }
+}
+
+*/
+
+
+/*DImensions: Surface Duo*/
+@media (height = 720px){
+    .productosPopulares > p{
+        font-size: 0.7em;
+        margin: 0.4em;
+    }
+    .pie> h1{
+        font-size: 0.7em;
+        margin-bottom: 1em;
+    }
+    .barraBotones{
+        font-size: 0.7em;
+    }
+    .buscador{
+        width: 6em;
+        height: 2em;
+
+    }
+    .buscador > p{
+        margin-top: 0.4em;
+    }
+
+    .contenedorProducto{
+        margin-top: 22vh;
+    }
+}
+
+/*iPhone SE  horizontal*/
+@media (height <= 375px) and (height > 360px){
+
+    /*PRIMERA COLUMNA*/
+    .configuracion{
+        margin-top: 7em;
+    }
+
+
+    /*SEGUNDA COLUMNA*/
+    .barraBotones > p, .buscador > p{
+        font-size: 0.6rem;
+    }
+
+    .buscador > p{
+        margin-top: 1em;
+    }
+    
+    .barraBotones{
+        height: 8em;
+    }
+
+    .contenedorProducto{
+        margin-top: 8em;
+    }
+
+    .producto > img{
+        width: 12em;
+        height: 12em;
+        margin-left: 1vw;
+    }
+
+    .contenedorProductos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .juego > p{
+        font-size: 0.7rem;
+    }
+
+
+    .juegoRelacionado > img{
+        width: 9em;
+        height: 10em;
+    }
+
+    /*TERCERA COLUMNA*/
+
+    .containerTresIconos{
+        flex-direction: row;
+    }
+
+    .tresIconos > a >img{
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .productosPopulares > img{
+        width: 2em;
+        height: 2em;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.5rem;
+    }
+
+    .pie > h1{
+        font-size: 0.6rem;
+    }
+
+    .productosPopulares > p{
+        margin-bottom: 0vh;
+    }
+    
+
+}
+
+
+
+
+/*iPhone XR  horizontal y Pixel 7*/
+@media (height < 429px) and (height > 410px){
+
+    /*PRIMERA COLUMNA*/
+    .configuracion{
+        margin-top: 7em;
+    }
+
+
+
+    /*SEGUNDA COLUMNA*/
+    .barraBotones > p, .buscador > p{
+        font-size: 0.8rem;
+    }
+
+    .buscador > p{
+        margin-top: 0.7em;
+    }
+    
+    .barraBotones{
+        height: 8em;
+    }
+    .contenedorProducto{
+        margin-top: 8em;
+    }
+
+    .producto > img{
+        width: 12em;
+        height: 12em;
+        margin-left: 1vw;
+    }
+
+
+    /*TERCERA COLUMNA*/
+
+    .containerTresIconos{
+        flex-direction: row;
+        margin-top: 1em;
+    }
+
+    .tresIconos > a >img{
+        width: 2em;
+        height: 2em;
+        
+    }
+
+    .productosPopulares > img{
+        width: 2.6em;
+        height: 2.6em;
+    }
+    .productosPopulares{
+        margin: 0.1em;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.7rem;
+    }
+
+    .pie{
+        margin-top: 0;
+    }
+
+    .pie > h1{
+        font-size: 0.6rem;
+    }
+
+}
+
+
+/*iPhone 12 Pro  horizontal*/
+@media (min-height: 376px) and (max-height: 400px){
+/*PRIMERA COLUMNA*/
+.configuracion{
+    margin-top: 6.5em;
+}
+
+
+
+/*SEGUNDA COLUMNA*/
+.barraBotones > p, .buscador > p{
+    font-size: 0.8rem;
+}
+
+.buscador > p{
+    margin-top: 0.7em;
+}
+
+.barraBotones{
+    height: 8em;
+}
+.contenedorProducto{
+    margin-top: 8em;
+}
+
+.producto > img{
+    width: 12em;
+    height: 12em;
+    margin-left: 1vw;
+}
+
+
+
+/*TERCERA COLUMNA*/
+
+.containerTresIconos{
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.tresIconos{
+    margin-bottom: 0;
+}
+
+.tresIconos > a >img{
+    width: 2em;
+    height: 2em;
+    
+}
+
+.productosPopulares > img{
+    width: 2.6em;
+    height: 2.6em;
+}
+.productosPopulares{
+    margin: 0.1em;
+}
+
+.productosPopulares > p{
+    font-size: 0.7rem;
+}
+
+.pie{
+    margin-top: 0;
+}
+
+.pie > h1{
+    font-size: 0.6rem;
+    margin: 2vh;
+}
+
+}
+
+
+
+
+
+
+
+/*iPhone 14 Pro MAX  y Pixel 7 horizontal*/
+@media (height <= 430px) and (height > 400px){
+    /*PRIMERA COLUMNA*/
+    .configuracion{
+        margin-top: 7em;
+        margin-bottom: 0;
+    }
+    
+    
+    
+    /*SEGUNDA COLUMNA*/
+    .barraBotones > p, .buscador > p{
+        font-size: 0.8rem;
+    }
+    
+    .buscador > p{
+        margin-top: 0.7em;
+    }
+    
+    .barraBotones{
+        height: 8em;
+    }
+    .contenedorProducto{
+        margin-top: 8em;
+    }
+
+    .producto > img{
+        width: 12em;
+        height: 12em;
+        margin-left: 1vw;
+    }
+
+    
+    
+    /*TERCERA COLUMNA*/
+    
+    .containerTresIconos{
+        flex-direction: row;
+        margin-top: 1em;
+    }
+    
+    .tresIconos{
+        margin-bottom: 0;
+    }
+    
+    .tresIconos > a >img{
+        width: 2em;
+        height: 2em;
+        
+    }
+    
+    .productosPopulares > img{
+        width: 2.9em;
+        height: 2.9em;
+    }
+    .productosPopulares{
+        margin: 0.1em;
+    }
+    
+    .productosPopulares > p{
+        font-size: 0.7rem;
+    }
+    
+    .pie{
+        margin-top: 0;
+    }
+    
+    .pie > h1{
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+
+
+/*Samsumg galaxy S8+*/
+@media (height <= 360px) and (height > 290px){
+    
+    /*PRIMERA COLUMNA*/
+    .configuracion{
+        margin-top: 25vh;
+    }
+
+    .configuracion > h1 {
+        font-size: 0.8rem;
+    }
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1{
+        font-size: 0.8rem;
+    }
+
+
+    /*SEGUNDA COLUMNA*/
+    .barraBotones > p, .buscador > p{
+        font-size: 0.6rem;
+    }
+
+    .buscador{
+        height: 1.5em;
+    }
+
+    .buscador > p{
+        margin-top: 0.7em;
+    }
+    
+    .barraBotones{
+        height: 8em;
+    }
+
+    .contenedorProducto{
+        margin-top: 8em;
+    }
+
+    .producto > img{
+        width: 12em;
+        height: 12em;
+        margin-left: 1vw;
+    }
+
+    .juegoRelacionado > img{
+        width: 9em;
+        height: 10em;
+    }
+
+    /*TERCERA COLUMNA*/
+
+    .containerTresIconos{
+        flex-direction: row;
+    }
+
+    .tresIconos{
+        margin-bottom: 0;
+    }
+
+    .tresIconos > a >img{
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .productosPopulares > img{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .productosPopulares{
+        margin: 0.1em;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.5rem;
+    }
+
+    .pie > h1{
+        font-size: 0.6rem;
+    }
+
+    .pie{
+        margin-top: 0;
+    }
+
+    
+}
+
+
+
+/*IPAD MINI*/
+@media (height <= 768px) and (height > 599px){
+    .configuracion{
+        margin-top: 40vh;
+        margin-bottom: 0;
+    }
+
+    .pie {
+        margin-top: 0vh;
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media (height <= 599px) and (height > 430px){
+    .configuracion{
+        margin-top: 40vh;
+        margin-bottom: 0;
+    }
+
+    .pie {
+        margin-top: 0vh;
+        margin-bottom: 0;
+    }
+
+    .pie > h1{
+        font-size: 0.6rem;
+    }
+
+    .contenedorProducto{
+        margin-top: 14em;
+    }
+
+    .producto > img{
+        width: 12em;
+        height: 12em;
+        margin-left: 1vw;
+    }
+
+    .juegoRelacionado > img{
+        width: 9em;
+        height: 10em;
+    }
+
+
+
+
+    .containerTresIconos{
+        flex-direction: row;
+        margin-top: 2vh;
+    }
+
+    .tresIconos{
+        margin-bottom: 0;
+    }
+
+    .tresIconos > a >img{
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .productosPopulares > img{
+        width: 3em;
+        height: 3em;
+    }
+    .productosPopulares{
+        margin: 0.1em;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.6rem;
+    }
+
+    .pie > h1{
+        font-size: 0.6rem;
+    }
+
+    .pie{
+        margin-top: 0;
+    }
+
+
+    
+
+
+}
+
+
+/*IPAD AIR*/
+@media (height <= 830px) and (height > 800px){
+    .configuracion{
+        margin-top: 55vh;
+        margin-bottom: 0;
+    }
+
+    .pie {
+        margin-top: 17vh;
+        margin-bottom: 0;
+    }
+
+}
+
+
+/*Galaxy Fold horizontal*/
+@media (height <= 289px) and (height > 100px){
+    
+    /*PRIMERA COLUMNA*/
+    .configuracion{
+        margin-top: 20vh;
+    }
+
+    .configuracion > h1 {
+        font-size: 0.6rem;
+    }
+
+    .tienda_bibl_cat_pla > h1, .tienda_bibl_cat_pla > a > h1{
+        font-size: 0.6rem;
+    }
+
+
+    /*SEGUNDA COLUMNA*/
+    .barraBotones > p, .buscador > p{
+        font-size: 0.6rem;
+    }
+
+    .buscador{
+        height: 1.5em;
+    }
+
+    .buscador > p{
+        margin-top: 0.7em;
+    }
+    
+    .barraBotones{
+        height: 7em;
+    }
+
+    .contenedorProducto{
+        margin-top: 7em;
+    }
+
+    .juego > img, .juego > a > img{
+        width: 8em;
+        height: 8em;
+    }
+
+    .producto > img{
+        width: 9.5em;
+        height: 10em;
+    }
+
+    .juegoRelacionado > img{
+        width: 9em;
+        height: 9em;
+    }
+
+    /*TERCERA COLUMNA*/
+
+    .containerTresIconos{
+        flex-direction: row;
+    }
+
+    .tresIconos{
+        margin-bottom: 0;
+    }
+
+    .tresIconos > a >img{
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .productosPopulares > img{
+        width: 0em;
+        height:0em;
+    }
+    .productosPopulares{
+        margin: 0.1em;
+    }
+
+    .productosPopulares > p{
+        font-size: 0.5rem;
+    }
+
+    .pie > h1{
+        font-size: 0.5rem;
+    }
+
+    .pie{
+        margin-top: 0;
+    }
+
+    
+}
